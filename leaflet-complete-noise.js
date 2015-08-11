@@ -136,7 +136,7 @@ var raillq16 = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE
 
 
 var noiseMaps = {
-    "None":,
+    "None": null,
     "Roads Lden": roadlden,
     "Roads Lnight": roadlnight,
     "Roads Laeq16h": roadlq16,
