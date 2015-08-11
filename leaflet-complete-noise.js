@@ -1,4 +1,4 @@
-/ Define a Proj4Leaflet crs instance configured for British National Grid
+// Define a Proj4Leaflet crs instance configured for British National Grid
 // (EPSG:27700) and the resolutions of our base map
 var crs = new L.Proj.CRS(
     'EPSG:27700',
