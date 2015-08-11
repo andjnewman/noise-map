@@ -1,4 +1,4 @@
-// Define a Proj4Leaflet crs instance configured for British National Grid
+/ Define a Proj4Leaflet crs instance configured for British National Grid
 // (EPSG:27700) and the resolutions of our base map
 var crs = new L.Proj.CRS(
     'EPSG:27700',
@@ -22,7 +22,7 @@ var osLayer = L.tileLayer.wms('http://t0.ads.astuntechnology.com/open/osopen/ser
 
 
 var agglomerations = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE=WMS&UID=UDATAGOV2011&PASSWORD=datagov2011&INTERFACE=ENVIRONMENT&LC=40000000000000000', {
-    layers: 'eainspire2011-wms-neinest00020090',
+    layers: 'eainspire2011-wms-env_noise_dir_aggloms',
     tiled: true,
     format: 'image/png',
     transparent: true,
@@ -40,36 +40,10 @@ var map = new L.Map('map', {
 
 map.setView([52.5, -1.8], 0);
 
-
-
-// -- Load noise WMS layer (Using AONB data for now) --
-
-var noiseLayer = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE=WMS&UID=UDATAGOV2011&PASSWORD=datagov2011&INTERFACE=ENVIRONMENT&LC=40000000000000000', {
-    layers: 'eainspire2011-wms-areas_of_onb_inspire',
-    tiled: true,
-    format: 'image/png',
-    transparent: true,
-    maxZoom: 14,
-    minZoom: 0,
-    continuousWorld: true,
-    attribution: 'Contains public sector information licensed under the Open Government Licence v3.0.'
-})
-
-// -- Load noise WMS layer (Using National parks data for now) --
-
-var noiseLayer2 = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE=WMS&UID=UDATAGOV2011&PASSWORD=datagov2011&INTERFACE=ENVIRONMENT&LC=40000000000000000', {
-    layers: 'eainspire2011-wms-nationalparks_eng_inspire',
-    tiled: true,
-    format: 'image/png',
-    transparent: true,
-    maxZoom: 14,
-    minZoom: 0,
-    continuousWorld: true,
-    attribution: 'Contains public sector information licensed under the Open Government Licence v3.0.'
-})
+// -- Load imp areas WMS layer--
 
 var impAreas = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE=WMS&UID=UDATAGOV2011&PASSWORD=datagov2011&INTERFACE=ENVIRONMENT&LC=40000000000000000', {
-    layers: 'ea-wms-eaieaew00020043',
+    layers: 'eainspire2011-wms-noise_action_plan_imp_areas',
     tiled: true,
     format: 'image/png',
     transparent: true,
@@ -78,17 +52,102 @@ var impAreas = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE
     continuousWorld: true,
     attribution: 'Contains public sector information licensed under the Open Government Licence v3.0.'
 })
+
+// -- Load noise WMS layer--
+
+var roadlden = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE=WMS&UID=UDATAGOV2011&PASSWORD=datagov2011&INTERFACE=ENVIRONMENT&LC=40000000000000000', {
+    layers: 'eainspire2011-wms-rd_noise_eng_lden',
+    tiled: true,
+    format: 'image/png',
+    transparent: true,
+    maxZoom: 14,
+    minZoom: 0,
+    continuousWorld: true,
+    attribution: 'Contains public sector information licensed under the Open Government Licence v3.0.'
+})
+
+
+// -- Load noise WMS layer--
+
+var roadlnight = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE=WMS&UID=UDATAGOV2011&PASSWORD=datagov2011&INTERFACE=ENVIRONMENT&LC=40000000000000000', {
+    layers: 'eainspire2011-wms-rd_noise_eng_lngt',
+    tiled: true,
+    format: 'image/png',
+    transparent: true,
+    maxZoom: 14,
+    minZoom: 0,
+    continuousWorld: true,
+    attribution: 'Contains public sector information licensed under the Open Government Licence v3.0.'
+})
+
+// -- Load noise WMS layer--
+
+var roadlq16 = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE=WMS&UID=UDATAGOV2011&PASSWORD=datagov2011&INTERFACE=ENVIRONMENT&LC=40000000000000000', {
+    layers: 'eainspire2011-wms-rd_noise_eng_lq16',
+    tiled: true,
+    format: 'image/png',
+    transparent: true,
+    maxZoom: 14,
+    minZoom: 0,
+    continuousWorld: true,
+    attribution: 'Contains public sector information licensed under the Open Government Licence v3.0.'
+})
+
+// -- Load noise WMS layer--
+
+var raillden = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE=WMS&UID=UDATAGOV2011&PASSWORD=datagov2011&INTERFACE=ENVIRONMENT&LC=40000000000000000', {
+    layers: 'eainspire2011-wms-rl_noise_eng_lden',
+    tiled: true,
+    format: 'image/png',
+    transparent: true,
+    maxZoom: 14,
+    minZoom: 0,
+    continuousWorld: true,
+    attribution: 'Contains public sector information licensed under the Open Government Licence v3.0.'
+})
+
+
+// -- Load noise WMS layer--
+
+var raillnight = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE=WMS&UID=UDATAGOV2011&PASSWORD=datagov2011&INTERFACE=ENVIRONMENT&LC=40000000000000000', {
+    layers: 'eainspire2011-wms-rl_noise_eng_lngt',
+    tiled: true,
+    format: 'image/png',
+    transparent: true,
+    maxZoom: 14,
+    minZoom: 0,
+    continuousWorld: true,
+    attribution: 'Contains public sector information licensed under the Open Government Licence v3.0.'
+})
+
+// -- Load noise WMS layer--
+
+var raillq16 = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE=WMS&UID=UDATAGOV2011&PASSWORD=datagov2011&INTERFACE=ENVIRONMENT&LC=40000000000000000', {
+    layers: 'eainspire2011-wms-rl_noise_eng_lq16',
+    tiled: true,
+    format: 'image/png',
+    transparent: true,
+    maxZoom: 14,
+    minZoom: 0,
+    continuousWorld: true,
+    attribution: 'Contains public sector information licensed under the Open Government Licence v3.0.'
+})
+
 
 
 var noiseMaps = {
-    "AONBs": noiseLayer,
-    "National Parks": noiseLayer2
-};
+    "Roads Lden": roadlden,
+    "Roads Lnight": roadlnight,
+    "Roads Laeq16h": roadlq16,
+    "Rail Lden": raillden,
+    "Rail Lnight": raillnight,
+    "Rail Laeq16h": raillq16
+}
 
 
 var overlayMaps = {
     "Agglomerations": agglomerations,
     "Important Areas": impAreas
-};
+}
 
 L.control.layers(noiseMaps, overlayMaps).addTo(map);
