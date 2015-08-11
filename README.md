@@ -5,7 +5,7 @@
 
 This repository contains a very simple [http://www.leafletjs.com/](Leaflet JS) based web mapping application that displays the English Strategic Noise Mapping data published by Defra, through the [http://www.geostore.com/environment-agency](DataShare service).
 
-* The app can be viewed at: [http://andjnewman.github.io/noise-map/leaflet-complete.html]( http://andjnewman.github.io/noise-map/leaflet-complete.html0
+* The app can be viewed at: [http://andjnewman.github.io/noise-map/leaflet-complete.html]( http://andjnewman.github.io/noise-map/leaflet-complete.html)
 * The code can be found in the gh-pages branch of this repository at: [https://github.com/andjnewman/noise-map/tree/gh-pages](https://github.com/andjnewman/noise-map/tree/gh-pages)
 
 ##Credits
