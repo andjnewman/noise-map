@@ -9,12 +9,12 @@ This repository contains a very simple [Leaflet JS](http://www.leafletjs.com) ba
 * The code can be found in the gh-pages branch of this repository at: [https://github.com/andjnewman/noise-map/tree/gh-pages](https://github.com/andjnewman/noise-map/tree/gh-pages)
 
 ###Noise Datasets Portrayed:
-* [road-noise-laeq-16h-england-round-2](http://data.gov.uk/dataset/road-noise-laeq-16h-england-round-2 
+* [road-noise-laeq-16h-england-round-2](http://data.gov.uk/dataset/road-noise-laeq-16h-england-round-2) 
 * [road-noise-lden-england-round-2](http://data.gov.uk/dataset/road-noise-lden-england-round-2)
 * [rail-noise-lnight-england-round-2](http://data.gov.uk/dataset/rail-noise-lnight-england-round-2)
 * [road-noise-lnight-england-round-2](http://data.gov.uk/dataset/road-noise-lnight-england-round-2)
 * [rail-noise-lden-england-round-2](http://data.gov.uk/dataset/rail-noise-lden-england-round-2)
-* [environmental-noise-directive-end-noise-mapping-noise-mapping-agglomerations-england-round-2[(http://data.gov.uk/dataset/environmental-noise-directive-end-noise-mapping-noise-mapping-agglomerations-england-round-2)
+* [environmental-noise-directive-end-noise-mapping-noise-mapping-agglomerations-england-round-2](http://data.gov.uk/dataset/environmental-noise-directive-end-noise-mapping-noise-mapping-agglomerations-england-round-2)
 * [noise-action-planning-important-areas-round-2-england](http://data.gov.uk/dataset/noise-action-planning-important-areas-round-2-england)
 * [rail-noise-laeq-16h-england-round-2](http://data.gov.uk/dataset/rail-noise-laeq-16h-england-round-2)
 
