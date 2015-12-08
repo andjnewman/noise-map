@@ -141,12 +141,13 @@ var noiseMaps = {
 
 var overlayMaps = {
     "Agglomerations": agglomerations,
-    "Important Areas": impAreas
+    "Important Areas": impAreas,
+    "OS Map": osLayer
 }
 
 var map = new L.Map('map', {
     crs: crs,
-    layers: [osLayer, agglomerations, roadlq16, raillq16]
+    layers: [osLayer, agglomerations]
 });
 
 map.setView([52.5, -1.8], 0);
