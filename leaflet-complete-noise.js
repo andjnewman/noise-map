@@ -33,12 +33,6 @@ var agglomerations = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?S
 })
 
 
-var map = new L.Map('map', {
-    crs: crs,
-    layers: [osLayer, agglomerations]
-});
-
-map.setView([52.5, -1.8], 0);
 
 // -- Load imp areas WMS layer--
 
@@ -149,5 +143,12 @@ var overlayMaps = {
     "Agglomerations": agglomerations,
     "Important Areas": impAreas
 }
+
+var map = new L.Map('map', {
+    crs: crs,
+    layers: [osLayer, agglomerations, roadlq16, raillq16]
+});
+
+map.setView([52.5, -1.8], 0);
 
 L.control.layers(noiseMaps, overlayMaps).addTo(map);
