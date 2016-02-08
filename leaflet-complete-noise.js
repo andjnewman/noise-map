@@ -8,7 +8,6 @@ var crs = new L.Proj.CRS(
     }
 );
 
-// Define a standard Leaflet map specifying our crs instance and define a WMS
 // base map
 
 var osLayer = L.tileLayer.wms('http://t0.ads.astuntechnology.com/open/osopen/service', {
@@ -19,6 +18,9 @@ var osLayer = L.tileLayer.wms('http://t0.ads.astuntechnology.com/open/osopen/ser
             continuousWorld: true,
             attribution: 'Astun Data Service &copy; Ordnance Survey.'
         })
+
+
+// -- Load Agglomerations WMS layer--
 
 
 var agglomerations = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE=WMS&UID=UDATAGOV2011&PASSWORD=datagov2011&INTERFACE=ENVIRONMENT&LC=40000000000000000', {
@@ -127,8 +129,6 @@ var raillq16 = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE
     attribution: 'Contains public sector information licensed under the Open Government Licence v3.0.'
 })
 
-
-
 var noiseMaps = {
     "Roads Lden": roadlden,
     "Roads Lnight": roadlnight,
@@ -137,7 +137,6 @@ var noiseMaps = {
     "Rail Lnight": raillnight,
     "Rail Laeq16h": raillq16
 }
-
 
 var overlayMaps = {
     "OS Map": osLayer,
@@ -152,4 +151,4 @@ var map = new L.Map('map', {
 
 map.setView([52.5, -1.8], 0);
 
-L.control.layers(noiseMaps, overlayMaps).addTo(map);
+L.control.layers(overlayMaps, noiseMaps).addTo(map);
