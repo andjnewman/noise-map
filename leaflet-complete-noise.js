@@ -148,4 +148,4 @@ var map = new L.Map('map', {
 
 map.setView([52.5, -1.8], 0);
 
-L.control.layers(,noiseMaps).addTo(map);
+L.control.layers(null,noiseMaps).addTo(map);
