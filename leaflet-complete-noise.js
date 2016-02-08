@@ -140,7 +140,7 @@ var noiseMaps = {
 
 
 var overlayMaps = {
-    "OS Map": osLayer
+    "OS Map": osLayer,
     "Important Areas": impAreas,
     "Agglomerations": agglomerations,
 }
