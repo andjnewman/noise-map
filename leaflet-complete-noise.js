@@ -136,8 +136,8 @@ var noiseMaps = {
     "Roads Laeq16h": roadlq16,
     "Rail Lden": raillden,
     "Rail Lnight": raillnight,
-    "Rail Laeq16h": raillq16
-    "Agglomerations": agglomerations
+    "Rail Laeq16h": raillq16,
+    "Agglomerations": agglomerations,
     "OS Map": osLayer
 }
 
