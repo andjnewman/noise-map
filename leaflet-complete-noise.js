@@ -143,7 +143,7 @@ var noiseMaps = {
 
 var map = new L.Map('map', {
     crs: crs,
-    layers: [agglomerations, osLayer]
+    layers: [noiseMaps]
 });
 
 map.setView([52.5, -1.8], 0);
