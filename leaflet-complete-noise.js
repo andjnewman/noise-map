@@ -130,18 +130,15 @@ var raillq16 = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE
 })
 
 var noiseMaps = {
+    "Important Areas": impAreas,
     "Roads Lden": roadlden,
     "Roads Lnight": roadlnight,
     "Roads Laeq16h": roadlq16,
     "Rail Lden": raillden,
     "Rail Lnight": raillnight,
     "Rail Laeq16h": raillq16
-}
-
-var overlayMaps = {
-    "OS Map": osLayer,
-    "Important Areas": impAreas,
-    "Agglomerations": agglomerations,
+    "Agglomerations": agglomerations
+    "OS Map": osLayer
 }
 
 var map = new L.Map('map', {
@@ -151,4 +148,4 @@ var map = new L.Map('map', {
 
 map.setView([52.5, -1.8], 0);
 
-L.control.layers(overlayMaps, noiseMaps).addTo(map);
+L.control.layers(noiseMaps).addTo(map);
