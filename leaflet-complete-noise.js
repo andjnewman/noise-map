@@ -51,7 +51,7 @@ var impAreas = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE
 
 // -- Load noise WMS layer--
 
-var roadlden = L.tileLayer.wms('http://www.geostore.com/OGC/OGCInterface?SERVICE=WMS&UID=UDATAGOV2011&PASSWORD=datagov2011&INTERFACE=ENVIRONMENT&LC=40000000000000000', {
+var roadlden = L.tileLayer.wms('https://environment.data.gov.uk/spatialdata/road-noise-lden-england-round-2/wms', {
     layers: 'eainspire2011-wms-rd_noise_eng_lden',
     tiled: true,
     format: 'image/png',
